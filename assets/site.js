@@ -4,8 +4,9 @@
    WhatsApp, put the form endpoint below (Formspree, FormSubmit,
    Google Apps Script …). Leave it empty to keep the WhatsApp flow.
    ------------------------------------------------------------------ */
-var LEAD_ENDPOINT = "";
-var WA = "201551876540";
+var LEAD_ENDPOINT = "";          /* (اختياري) رابط Formspree أو أي خدمة أخرى */
+var LEAD_EMAIL    = "";          /* ← حطي إيميلك هنا لاستقبال الرسائل، مثال: "sales@hawktrade.com" */
+var WA  = "201551876540";
 var TEL = "+201551876540";
 
 (function () {
@@ -121,6 +122,8 @@ var TEL = "+201551876540";
     q_h:["سجّل طلبك خلال دقيقة","Register your request in a minute"],
     f_n:["الاسم","Name"],
     f_ph:["رقم الهاتف / واتساب","Phone / WhatsApp"],
+    f_em:["البريد الإلكتروني","Email"],
+    f_em_opt:["البريد الإلكتروني (اختياري)","Email (optional)"],
     f_c:["اسم الشركة / المكتب","Company / office"],
     f_ci:["المدينة","City"],
     f_t:["نوع النشاط","Business type"],
@@ -133,6 +136,7 @@ var TEL = "+201551876540";
     ci_k:["بيانات التواصل","Contact details"],
     ci_h:["تحب تتصل مباشرة؟","Prefer to call?"],
     ci_wa:["واتساب","WhatsApp"],
+    ci_mail:["البريد الإلكتروني","Email"],
     ci_hours:["ساعات العمل","Working hours"],
     ci_hours_v:["السبت – الخميس، 9 صباحًا – 6 مساءً (توقيت مصر)","Saturday – Thursday, 9am – 6pm (Egypt time)"],
     ci_resp:["وقت الرد","Response time"],
@@ -168,6 +172,7 @@ var TEL = "+201551876540";
     m_note:["شنو تحتاج؟ (اختياري)","What do you need? (optional)"],
     m_send:["أرسل","Send"],
     m_priv:["بياناتك تستخدم للتواصل وياك بخصوص طلبك فقط.","Your details are used only to contact you about your request."],
+    m_sending:["جارٍ الإرسال…","Sending…"],
     m_ok_h:["وصلنا طلبك","We've got it"],
     m_ok_p:["شكرًا لك. فريقنا راح يتواصل وياك خلال يوم عمل.","Thank you. Our team will contact you within one business day."],
     m_ok_wa:["تحب تستعجل؟ راسلنا على واتساب","In a hurry? Message us on WhatsApp"],
@@ -249,20 +254,29 @@ var TEL = "+201551876540";
   /* ---------- lead submission ---------- */
   function fieldLabels(ar){
     return ar
-      ? { name:"الاسم", phone:"الهاتف", company:"الشركة", city:"المدينة", type:"النشاط", items:"الأصناف", qty:"الكمية", note:"الملاحظات" }
-      : { name:"Name", phone:"Phone", company:"Company", city:"City", type:"Type", items:"Items", qty:"Quantity", note:"Notes" };
+      ? { name:"الاسم", phone:"الهاتف", email:"البريد الإلكتروني", company:"الشركة", city:"المدينة", type:"النشاط", items:"الأصناف", qty:"الكمية", note:"الملاحظات" }
+      : { name:"Name", phone:"Phone", email:"Email", company:"Company", city:"City", type:"Type", items:"Items", qty:"Quantity", note:"Notes" };
   }
   function buildMessage(data, ar){
     var lb = fieldLabels(ar), out = [], k;
     for (k in data){ if (data[k]) out.push("• " + (lb[k] || k) + ": " + data[k]); }
     return (ar ? "السلام عليكم، أريد عرض سعر من Hawk Trade:" : "Hello, I'd like a quote from Hawk Trade:") + "\n" + out.join("\n");
   }
+  function endpoint(){
+    if (LEAD_ENDPOINT) return LEAD_ENDPOINT;
+    if (LEAD_EMAIL) return "https://formsubmit.co/ajax/" + encodeURIComponent(LEAD_EMAIL);
+    return "";
+  }
   function send(data, ar, onDone, onFail){
-    var msg = buildMessage(data, ar);
-    if (LEAD_ENDPOINT){
+    var msg = buildMessage(data, ar), url = endpoint();
+    if (url){
       var body = {}; for (var k in data) body[k] = data[k];
-      body.message = msg; body.source = location.pathname;
-      fetch(LEAD_ENDPOINT, {
+      body.message = msg;
+      body.source  = location.href;
+      body._subject = (ar ? "طلب جديد من الموقع — " : "New website request — ") + (data.name || "");
+      body._template = "table";
+      body._captcha = "false";
+      fetch(url, {
         method:"POST",
         headers:{ "Content-Type":"application/json", "Accept":"application/json" },
         body: JSON.stringify(body)
@@ -287,11 +301,14 @@ var TEL = "+201551876540";
       }
       box.className = "msg";
       var btn = mForm.querySelector("button[type=submit]");
+      var lbl = btn.querySelector("span"), old = lbl ? lbl.textContent : "";
       btn.disabled = true; btn.style.opacity = ".7";
-      send({ name:val("m-n"), phone:val("m-ph"), note:val("m-note") }, ar,
+      if (lbl) lbl.textContent = T.m_sending[ar ? 0 : 1];
+      var restore = function(){ btn.disabled = false; btn.style.opacity = ""; if (lbl) lbl.textContent = old; };
+      send({ name:val("m-n"), phone:val("m-ph"), email:val("m-em"), note:val("m-note") }, ar,
         function(){ $("m-body").hidden = true; $("m-done").hidden = false; },
         function(msg){
-          btn.disabled = false; btn.style.opacity = "";
+          restore();
           box.className = "msg err"; box.textContent = T.f_err[ar ? 0 : 1];
           var w = window.open(waUrl(msg), "_blank", "noopener"); if (!w) location.href = waUrl(msg);
         });
@@ -310,22 +327,36 @@ var TEL = "+201551876540";
       }
       box.className = "msg";
       var btn = cForm.querySelector("button[type=submit]");
+      var lbl = btn.querySelector("span"), old = lbl ? lbl.textContent : "";
       btn.disabled = true; btn.style.opacity = ".7";
+      if (lbl) lbl.textContent = T.m_sending[ar ? 0 : 1];
+      var restore = function(){ btn.disabled = false; btn.style.opacity = ""; if (lbl) lbl.textContent = old; };
       send({
-        name:val("c-n"), phone:val("c-ph"), company:val("c-c"), city:val("c-ci"),
+        name:val("c-n"), phone:val("c-ph"), email:val("c-em"), company:val("c-c"), city:val("c-ci"),
         type:$("c-ty") ? $("c-ty").value : "", items:val("c-p"), qty:val("c-q")
       }, ar,
         function(){
-          btn.disabled = false; btn.style.opacity = "";
+          restore();
           box.className = "msg ok"; box.textContent = T.m_ok_p[ar ? 0 : 1];
           cForm.reset();
         },
         function(msg){
-          btn.disabled = false; btn.style.opacity = "";
+          restore();
           box.className = "msg err"; box.textContent = T.f_err[ar ? 0 : 1];
           var w = window.open(waUrl(msg), "_blank", "noopener"); if (!w) location.href = waUrl(msg);
         });
     });
+  }
+
+  /* ---------- email links ---------- */
+  var mails = d.querySelectorAll("[data-mail]");
+  for (var mi = 0; mi < mails.length; mi++){
+    if (LEAD_EMAIL){
+      var a = mails[mi].tagName === "A" ? mails[mi] : mails[mi].querySelector("a");
+      if (a){ a.href = "mailto:" + LEAD_EMAIL; a.textContent = LEAD_EMAIL; }
+    } else {
+      mails[mi].hidden = true;
+    }
   }
 
   /* ---------- floating WhatsApp ---------- */
