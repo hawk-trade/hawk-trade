@@ -5,7 +5,7 @@
    Google Apps Script …). Leave it empty to keep the WhatsApp flow.
    ------------------------------------------------------------------ */
 var LEAD_ENDPOINT = "";          /* (اختياري) رابط Formspree أو أي خدمة أخرى */
-var LEAD_EMAIL    = "";          /* ← حطي إيميلك هنا لاستقبال الرسائل، مثال: "sales@hawktrade.com" */
+var LEAD_EMAIL    = "info@htstradegroup.com";   /* الإيميل اللي توصل عليه طلبات العملاء */
 var WA  = "201551876540";
 var TEL = "+201551876540";
 
