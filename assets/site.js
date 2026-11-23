@@ -22,25 +22,83 @@ var TEL = "+201551876540";
     nav_contact:["تواصل","Contact"],
     nav_cta:["اترك بياناتك","Leave your details"],
 
-    /* home */
-    chip:["مصر · دبي · تركيا · الصين — العراق قريبًا","Egypt · Dubai · Turkey · China — Iraq soon"],
-    h1a:["كل اللي تحتاجه تجارتك","Everything your business needs"],
-    h1b:["بالجملة من المصدر لحد مخزنك في العراق","wholesale, from source to your warehouse in Iraq"],
-    lead:["شريك توريد واحد للمستوردين والموزعين وتجار الجملة في العراق: نوفّر الأصناف اللي تطلبها من مصر ومن أسواق المجموعة، ونتولى الشحن والتخليص الجمركي بأنفسنا.","One sourcing partner for importers, distributors and wholesalers in Iraq: we supply the items you ask for from Egypt and our group's markets, and handle freight and customs clearance in-house."],
+    chip:["الصين · دبي · مصر · تركيا — العراق قريبًا","China · Dubai · Egypt · Turkey — Iraq soon"],
+    h1a:["نستورد لك","We import for you"],
+    r1:["إلكترونيات ولابتوبات","electronics & laptops"],
+    r2:["حديد ومواد بناء","steel & building materials"],
+    r3:["منتجات غذائية","food products"],
+    r4:["أي صنف تطلبه","any item you ask for"],
+    h1b:["بالجملة من أي سوق لحد مخزنك في العراق","wholesale, from any market to your warehouse in Iraq"],
+    lead:["مجموعة HTS شبكة شركات تجارة ولوجستيك في الصين ودبي ومصر وتركيا. نوفّر الأصناف اللي تطلبها من أي سوق فيهم، ونتولى الشحن والتخليص الجمركي بأنفسنا لحد ما توصل لمخزنك.","HTS is a network of trading and logistics companies in China, Dubai, Egypt and Turkey. We source the items you ask for from any of those markets and handle freight and customs clearance in-house, all the way to your warehouse."],
     hp1:["عرض سعر مكتوب","Written quotation"],
     hp2:["شحن وتخليص علينا","Freight & clearance on us"],
     hp3:["رد خلال يوم عمل","Reply within 1 business day"],
     cta_lead:["اترك بياناتك ونتواصل وياك","Leave your details — we'll call you"],
     cta_wa:["راسلنا على واتساب","Message us on WhatsApp"],
-    cta_how:["شلون نشتغل؟","How we work"],
     card_h:["خلّينا نتواصل وياك","Let us call you"],
     card_p:["اسمك ورقمك بس، وفريقنا يرجع لك بعرض سعر خلال يوم عمل.","Just your name and number — we'll come back with a quote within one business day."],
     card_or:["أو","or"],
 
     t1b:["سنة","yrs"], t1:["خبرة لوجستية في مصر منذ 2004","logistics experience in Egypt since 2004"],
     t2b:["سنة","yrs"], t2:["عمل متواصل في دبي","operating in Dubai"],
-    t3b:["دول","countries"], t3:["مصر · الإمارات · تركيا · الصين","Egypt · UAE · Turkey · China"],
+    t3b:["أسواق","markets"], t3:["الصين · دبي · مصر · تركيا","China · Dubai · Egypt · Turkey"],
     t4b:["العراق","Iraq"], t4:["فرعنا الجديد قريبًا","new branch coming soon"],
+
+    sec_k:["قطاعاتنا","What we supply"],
+    sec_h:["نستورد لك من أي قطاع","We import across every sector"],
+    sec_p:["مو تخصص واحد — نوفّر الأصناف اللي تشتغل بيها من أي سوق من أسواق المجموعة، وبلد المنشأ يكون واضح في عرض السعر.","Not one niche — we source whatever you trade in from any of our group's markets, with country of origin stated in every quote."],
+    s1h:["إلكترونيات وتكنولوجيا","Electronics & technology"],
+    s1a:["لابتوبات وأجهزة كمبيوتر","Laptops & computers"],
+    s1b2:["موبايلات وإكسسوارات","Phones & accessories"],
+    s1c:["أجهزة منزلية","Home appliances"],
+    s1d:["قطع غيار وملحقات","Parts & peripherals"],
+    s2h:["حديد ومواد بناء","Steel & building materials"],
+    s2a:["حديد تسليح ومقاطع","Rebar & steel sections"],
+    s2b2:["ألمنيوم وبروفيلات","Aluminium profiles"],
+    s2c:["سيراميك وبورسلين","Ceramic & porcelain"],
+    s2d:["أدوات صحية ودهانات","Sanitary ware & paints"],
+    s3h:["منتجات غذائية","Food products"],
+    s3a:["معلبات وصلصات","Canned goods & sauces"],
+    s3b2:["أرز وبقوليات وزيوت","Rice, pulses & oils"],
+    s3c:["مكرونة ومواد جافة","Pasta & dry goods"],
+    s3d:["مربى وحلاوة وطحينة","Jams, halawa & tahini"],
+    s4h:["أي صنف ثاني؟","Anything else?"],
+    s4p:["أرسل لنا قائمتك بالأصناف والكميات، ونرجع لك بالتوفر والسعر وبلد المنشأ — مهما كان الصنف أو السوق.","Send us your list of items and quantities and we'll come back with availability, price and origin — whatever the item or the market."],
+    s4go:["أرسل قائمتك","Send your list"],
+
+    j_k:["من المصدر لحد مخزنك","From source to your door"],
+    j_h:["رحلة شحنتك ويانا","Your shipment's journey with us"],
+    j_p:["جوًا أو بحرًا أو برًا — المجموعة تتولى الشحنة من لحظة الشراء لحد ما تنزل في مخزنك.","By air, sea or land — the group handles your shipment from purchase to unloading at your warehouse."],
+    j_from:["من أي بلد","From any country"],
+    j_to:["مخزنك في العراق","Your warehouse in Iraq"],
+    j_air:["شحن جوي","Air freight"],
+    j_sea:["شحن بحري","Sea freight"],
+    j_land:["شحن بري","Land freight"],
+    j1h:["ترسل طلبك","Send your request"],
+    j1:["الأصناف والكمية التقريبية — بزر واحد أو على واتساب.","Items and approximate quantity — one button, or over WhatsApp."],
+    j2h:["نرسل عرض السعر","You get a quote"],
+    j2:["عرض مكتوب بالأسعار والمواصفات وبلد المنشأ.","A written offer with prices, specs and origin."],
+    j3h:["نتفق ونجهّز","Agree & prepare"],
+    j3:["نثبّت التفاصيل ونجهّز البضاعة من المصدر.","We confirm details and prepare the goods at source."],
+    j4h:["نشحن ونخلّص","We ship & clear"],
+    j4:["الشحن والتخليص علينا، مع متابعة الشحنة خطوة بخطوة.","Freight and clearance on us, with step-by-step tracking."],
+    j_step:["الخطوة","STEP"],
+
+    sv_k:["خدمات المجموعة","Group services"],
+    sv_h:["شبكة لوجستية كاملة وراء كل شحنة","A full logistics network behind every shipment"],
+    sv_p:["مو بس توريد — المجموعة عندها شركات لوجستية ومستودعات في الصين ودبي تشتغل على شحنتك.","More than sourcing — the group runs logistics companies and warehouses in China and Dubai working on your shipment."],
+    v1h:["تنسيق الشحن","Freight coordination"],
+    v1:["تخطيط وتنسيق حركة الشحنات بين الأسواق.","Planning and coordinating shipment movement across markets."],
+    v2h:["حاويات كاملة وجزئية","FCL & LCL cargo"],
+    v2:["خيارات الشحن بالحاوية الكاملة أو الجزئية حسب حجم طلبك.","Full-container or part-container options to match your order size."],
+    v3h:["مستودعات في الصين ودبي","Warehouses in China & Dubai"],
+    v3:["تواجد مستودعي يدعم التخزين وتجميع الشحنات.","Warehouse presence supporting storage and consolidation."],
+    v4h:["دعم الاستيراد","Import support"],
+    v4:["تنسيق انتقال البضائع بين الأسواق لحد الوصول.","Coordinating goods moving between markets to arrival."],
+    v5h:["مناولة البضائع","Cargo handling"],
+    v5:["دعم خلال المراحل الرئيسية للشحنة.","Support through the key stages of the shipment."],
+    v6h:["تحديثات الشحنة","Shipment updates"],
+    v6:["تواصل واضح عن تقدم الشحنة في كل مرحلة.","Clear communication on shipment progress at every stage."],
 
     why_k:["ليش إحنا","Why us"],
     why_h:["جهة وحدة، من المصدر لحد مخزنك","One partner, from source to your warehouse"],
@@ -48,78 +106,62 @@ var TEL = "+201551876540";
     w1h:["حسب طلبك بالضبط","Built around your order"],
     w1:["تحدد الصنف والكمية والتعبئة، ونجهّز العرض على أساسها.","You set the item, quantity and packaging; we quote on that basis."],
     w2h:["الشحن والتخليص علينا","Freight & clearance handled"],
-    w2:["مجموعتنا تدير الشحن والتخليص الجمركي بنفسها، بدون وسطاء.","Our group runs shipping and customs clearance in-house, with no middlemen."],
-    w3h:["مستودعات للمجموعة","Group warehouses"],
-    w3:["مستودعات في دبي والصين تدعم التخزين وتنسيق الشحنات.","Warehouses in Dubai and China support storage and shipment coordination."],
+    w2:["شركات المجموعة تدير الشحن والتخليص بنفسها، بدون وسطاء.","Our group companies run shipping and clearance in-house, with no middlemen."],
+    w3h:["أربع أسواق تحت إيدك","Four markets at your disposal"],
+    w3:["الصين ودبي ومصر وتركيا — نجيب لك الصنف من السوق الأنسب سعرًا وجودة.","China, Dubai, Egypt and Turkey — we source from whichever market suits best on price and quality."],
     w4h:["شراكة مستمرة","Long-term partnership"],
     w4:["نبني علاقة طويلة الأمد مع التاجر، مو صفقة لمرة وحدة.","We build lasting relationships with traders, not one-off deals."],
 
-    p_k:["المنتجات","Products"],
-    p_h:["فئات نوفّرها لتجار العراق","Categories we supply to Iraqi traders"],
-    p_p:["أكثر الفئات طلبًا من السوق المصري — وأي صنف ثاني تشتغل بيه، أرسله لنا ونرجع لك بالتوفر والسعر.","The most requested categories from the Egyptian market — and for any other item you trade in, send it over and we'll reply with availability and pricing."],
+    g_k:["مجموعة HTS","HTS Group"],
+    g_h:["شبكة شركات في أربع أسواق","A network of companies in four markets"],
+    g_p:["شركة قابضة تربط شركات متخصصة في التجارة والخدمات اللوجستية.","A holding company connecting specialist trade and logistics businesses."],
+    g_more:["تعرّف على المجموعة","Meet the group"],
+    gp_p:["مجموعة HTS القابضة تربط شركات متخصصة في التجارة والخدمات اللوجستية في الصين والإمارات ومصر وتركيا، والعراق فرعها القادم.","HTS Holding Group connects specialist trade and logistics companies across China, the UAE, Egypt and Turkey — with Iraq as its next branch."],
+    gc_k:["شركات المجموعة","Group companies"],
+    gc_h:["شركات متخصصة، إدارة وحدة","Specialist companies, one management"],
+    gm_k:["التغطية","Coverage"],
+    gm_h:["أسواقنا اليوم","Our markets today"],
+    gm_p:["كل سوق فيه شركة تابعة للمجموعة، والعراق فرعنا القادم.","Each market has a group company; Iraq is our next branch."],
+    eg:["مصر","Egypt"], ae:["دبي","Dubai"], tr:["تركيا","Turkey"], cn:["الصين","China"], iq:["العراق","Iraq"],
+    co_ram_t:["خدمات لوجستية — تأسست 2004","Logistics services — established 2004"],
+    co_ram:["أقدم شركات المجموعة وأكثرها خبرة، وأكثر من عقدين في السوق المصري.","The group's oldest company, with more than two decades in the Egyptian market."],
+    co_hw_t:["تجارة أجهزة كمبيوتر وتكنولوجيا","Computer & technology trading"],
+    co_hw:["15 سنة في سوق دبي، ومستودع يدعم مناولة المنتجات والتجارة الإقليمية.","15 years in the Dubai market, with a warehouse supporting product handling and regional trade."],
+    co_nw_t:["شحن وخدمات لوجستية","Shipping & logistics services"],
+    co_nw:["15 سنة في دبي، وتتولى الشحن وتنسيق الشحنات لعمليات المجموعة.","15 years in Dubai, handling shipping and shipment coordination for the group."],
+    co_tm_t:["عمليات لوجستية في الصين","Logistics operations in China"],
+    co_tm:["تثبّت حضور المجموعة في الصين، ومستودع محلي يدعم التنسيق والتخزين.","Anchors the group's presence in China, with a local warehouse for coordination and storage."],
+    co_nv_t:["خدمات لوجستية في تركيا","Logistics services in Turkey"],
+    co_nv:["تربط السوق التركي بشبكة المجموعة وتوفّر نقطة تنسيق محلية.","Links the Turkish market to the group's network with a local coordination point."],
+    soon:["قريبًا","Coming soon"],
+    co_iq:["شركة لوجستية جديدة للمجموعة لخدمة تجار العراق عن قرب.","A new group logistics company to serve Iraqi traders up close."],
+
+    pp_h:["المنتجات","Products"],
+    pp_p:["نستورد من الصين ودبي ومصر وتركيا — إلكترونيات وحديد ومواد بناء وأغذية وأي صنف ثاني تطلبه.","We import from China, Dubai, Egypt and Turkey — electronics, steel, building materials, food, and anything else you ask for."],
+    pp_k:["القطاعات","Sectors"],
+    pf_k:["أمثلة","Examples"],
+    pf_h:["نماذج من الأصناف الغذائية","A sample of our food range"],
+    pf_p:["دي أمثلة بس — الأصناف تتحدد حسب طلبك والتوفر.","These are examples only — items depend on your request and availability."],
     c1:["معلبات وصلصات","Canned goods & sauces"],
     c2:["أرز وبقوليات","Rice & pulses"],
     c3:["زيوت وسمن","Oils & ghee"],
     c4:["مربى وحلاوة وطحينة","Jams, halawa & tahini"],
     c5:["مكرونة ومواد جافة","Pasta & dry goods"],
     c6:["أغذية مجمدة","Frozen foods"],
-    c7:["أصناف ثانية؟","Another item?"],
-    c7s:["أرسل القائمة ونشوفها لك","Send your list and we'll source it"],
     p_note:["الأصناف تتحدد حسب الطلب والتوفر، وكل عرض سعر يوضح المواصفات وبلد المنشأ لكل صنف.","Items depend on demand and availability. Every quote states specifications and country of origin per item."],
-    p_more:["شوف كل الفئات","See all categories"],
-
-    h_k:["طريقة العمل","How it works"],
-    h_h:["أربع خطوات، وكل مرحلة واضحة","Four steps, every stage visible"],
-    h_p:["تتابع ويانا كل مرحلة لحد ما توصل البضاعة لمخزنك.","You follow every stage with us until the goods reach your warehouse."],
-    st1h:["ترسل طلبك","Send your request"],
-    st1:["الأصناف والكمية التقريبية — بزر واحد أو على واتساب.","Items and approximate quantity — one button, or over WhatsApp."],
-    st2h:["نرسل عرض السعر","You get a quote"],
-    st2:["عرض مكتوب بالأسعار والمواصفات وبلد المنشأ.","A written offer with prices, specs and origin."],
-    st3h:["نتفق ونجهّز","Agree & prepare"],
-    st3:["نثبّت التفاصيل ونجهّز البضاعة من المصدر.","We confirm details and prepare the goods at source."],
-    st4h:["نشحن لحد عندك","We deliver"],
-    st4:["الشحن والتخليص علينا، مع متابعة الشحنة خطوة بخطوة.","Freight and clearance on us, with step-by-step tracking."],
-
-    g_k:["مجموعة HTS","HTS Group"],
-    g_h:["شبكة شركات في أربع دول","A network of companies in four countries"],
-    g_p:["مجموعة قابضة تربط شركات متخصصة في التجارة والخدمات اللوجستية.","A holding group connecting specialist trade and logistics companies."],
-    g_more:["تعرّف على المجموعة","Meet the group"],
-    eg:["مصر","Egypt"], ae:["دبي","Dubai"], tr:["تركيا","Turkey"], cn:["الصين","China"], iq:["العراق","Iraq"],
-    ram:["شركة لوجستية تأسست سنة 2004، وهي نواة المجموعة.","A logistics company founded in 2004 — the core of the group."],
-    hw:["تجارة وشحن ولوجستيك، 15 سنة في السوق، ومستودع في دبي.","Trading, shipping and logistics; 15 years in the market, with a Dubai warehouse."],
-    nv:["شركة لوجستية تربط السوق التركي بشبكة المجموعة.","A logistics company linking the Turkish market to the group."],
-    tm:["عمليات لوجستية مع مستودع محلي في الصين.","Logistics operations with a local warehouse in China."],
-    soon:["قريبًا","Coming soon"],
-    iqp:["فرع جديد للمجموعة لخدمة تجار العراق عن قرب.","A new group branch to serve Iraqi traders up close."],
-
-    /* products page */
-    pp_h:["المنتجات","Products"],
-    pp_p:["نوفّر الأصناف من السوق المصري ومن أسواق المجموعة في دبي وتركيا والصين، حسب طلبك.","We supply items from the Egyptian market and from our group's markets in Dubai, Turkey and China — to order."],
-    pp_k:["الفئات","Categories"],
-    pp_h2:["أكثر الفئات طلبًا","Most requested categories"],
-    pq_h:["ما لقيت الصنف اللي تدور عليه؟","Didn't find the item you need?"],
-    pq_p:["أرسل لنا قائمتك بالأصناف والكميات، ونرجع لك بالتوفر والسعر وبلد المنشأ.","Send us your list of items and quantities; we'll come back with availability, price and origin."],
+    p_more:["شوف كل القطاعات","See all sectors"],
     sp_h:["كل عرض سعر يوصلك واضح","Every quote arrives clear"],
     sp_p:["مو بس سعر — تعرف بالضبط شنو تستلم وشلون توصلك.","Not just a price — you know exactly what you receive and how it reaches you."],
-    sp1b:["مواصفات لكل صنف","Specs per item"], sp1:["الوزن، التعبئة، العبوة، وبلد المنشأ","weight, packing, unit and country of origin"],
+    sp1b:["مواصفات لكل صنف","Specs per item"], sp1:["الموديل، الوزن، التعبئة، وبلد المنشأ","model, weight, packing and country of origin"],
     sp2b:["سعر شامل للشحن","Price including freight"], sp2:["توصلك البضاعة لحد مخزنك","goods reach your warehouse"],
     sp3b:["جدول زمني واضح","A clear timeline"], sp3:["تعرف متى تجهز الشحنة ومتى تصل","you know when it ships and when it lands"],
     sp4b:["متابعة لحد الاستلام","Tracking to delivery"], sp4:["نبلغك بكل مرحلة","we update you at every stage"],
 
-    /* group page */
-    gp_p:["مجموعة قابضة تعمل منذ 2004 في التجارة والخدمات اللوجستية، وتخدم تجار العراق من أربع أسواق.","A holding group working in trade and logistics since 2004, serving Iraqi traders from four markets."],
-    gc_k:["شركات المجموعة","Group companies"],
-    gc_h:["شركات متخصصة، إدارة وحدة","Specialist companies, one management"],
-    gm_k:["التغطية","Coverage"],
-    gm_h:["أسواقنا اليوم","Our markets today"],
-    gm_p:["كل سوق فيه شركة تابعة للمجموعة، والعراق فرعنا القادم.","Each market has a group company; Iraq is our next branch."],
-
-    /* contact page */
     cp_h:["تواصل ويانا","Get in touch"],
     cp_p:["اترك بياناتك ونتواصل وياك، أو راسلنا مباشرة على واتساب. نرد خلال يوم عمل من السبت للخميس.","Leave your details and we'll contact you, or message us directly on WhatsApp. We reply within one business day, Saturday to Thursday."],
     cf_h:["اطلب عرض سعر","Request a quote"],
-    cf_p:["كل الحقول اختيارية ما عدا الاسم والرقم.","Everything is optional except your name and number."],
     q_h:["سجّل طلبك خلال دقيقة","Register your request in a minute"],
+    cf_p:["كل الحقول اختيارية ما عدا الاسم والرقم.","Everything is optional except your name and number."],
     f_n:["الاسم","Name"],
     f_ph:["رقم الهاتف / واتساب","Phone / WhatsApp"],
     f_em:["البريد الإلكتروني","Email"],
@@ -127,9 +169,11 @@ var TEL = "+201551876540";
     f_c:["اسم الشركة / المكتب","Company / office"],
     f_ci:["المدينة","City"],
     f_t:["نوع النشاط","Business type"],
+    f_s:["القطاع المطلوب","Sector"],
     f_p:["الأصناف المطلوبة","Items needed"],
     f_q:["الكمية التقريبية","Approximate quantity"],
-    o1:["مستورد","Importer"], o2:["تاجر جملة","Wholesaler"], o3:["موزع","Distributor"], o4:["سوبرماركت / سلسلة","Supermarket / chain"], o5:["أخرى","Other"],
+    o1:["مستورد","Importer"], o2:["تاجر جملة","Wholesaler"], o3:["موزع","Distributor"], o4:["سوبرماركت / سلسلة","Supermarket / chain"], o5:["مقاولات","Contracting"], o6:["أخرى","Other"],
+    k1:["إلكترونيات وتكنولوجيا","Electronics & technology"], k2:["حديد ومواد بناء","Steel & building materials"], k3:["منتجات غذائية","Food products"], k4:["أكثر من قطاع / غير ذلك","Multiple / other"],
     f_send:["أرسل الطلب","Send request"],
     f_req:["الرجاء كتابة الاسم ورقم الهاتف.","Please enter your name and phone number."],
     f_err:["تعذّر الإرسال. جرّب واتساب من الزر تحت.","Couldn't send. Please use the WhatsApp button below."],
@@ -142,41 +186,41 @@ var TEL = "+201551876540";
     ci_resp:["وقت الرد","Response time"],
     ci_resp_v:["خلال يوم عمل واحد","Within one business day"],
 
-    /* faq */
     faq_k:["أسئلة متكررة","FAQ"],
     faq_h:["قبل ما تتواصل","Before you get in touch"],
     fq1:["شكد الأسعار؟","What are your prices?"],
-    fa1:["السعر يعتمد على الصنف والكمية والتعبئة. أرسل لنا طلبك ونرجع لك بعرض سعر مكتوب.","Prices depend on item, quantity and packaging. Send your request and we'll reply with a written quote."],
+    fa1:["السعر يعتمد على الصنف والكمية والتعبئة وسوق المصدر. أرسل لنا طلبك ونرجع لك بعرض سعر مكتوب.","Prices depend on the item, quantity, packaging and source market. Send your request and we'll reply with a written quote."],
     fq2:["منين البضاعة؟","Where do the goods come from?"],
-    fa2:["تركيزنا الأساسي على السوق المصري، ونوفّر كذلك من دبي وتركيا والصين عبر شركات المجموعة. بلد المنشأ يكون واضح في عرض السعر لكل صنف.","Our main focus is the Egyptian market; we also supply from Dubai, Turkey and China through our group companies. Country of origin is stated per item in every quote."],
-    fq3:["منو يتولى الشحن والتخليص؟","Who handles shipping and customs?"],
-    fa3:["مجموعتنا تتولى الشحن والتخليص الجمركي بنفسها، وتتابع الشحنة لحد ما توصل.","Our group handles freight and customs clearance in-house and follows the shipment to arrival."],
-    fq4:["شلون الدفع؟","What are the payment terms?"],
-    fa4:["طرق الدفع تتحدد حسب حجم الطلبية، وترسل لك مكتوبة مع عرض السعر.","Payment terms depend on order size and are sent in writing with the quote."],
-    fq5:["عدكم مكتب بالعراق؟","Do you have an office in Iraq?"],
-    fa5:["فرعنا في العراق قريبًا، وبعد الاتفاق يقدر ممثلنا يتابع وياك مباشرة.","Our Iraq branch is opening soon; after agreement our representative can follow up with you directly."],
+    fa2:["من أسواق المجموعة: الصين ودبي ومصر وتركيا — ونقدر نوفّر من أسواق ثانية حسب الصنف. بلد المنشأ واضح في عرض السعر لكل صنف.","From our group's markets — China, Dubai, Egypt and Turkey — and we can source from other markets depending on the item. Country of origin is stated per item in every quote."],
+    fq3:["تستوردون إلكترونيات وحديد ومواد بناء فعلاً؟","Do you really import electronics, steel and building materials?"],
+    fa3:["إي. من ضمن شركات المجموعة شركة Headway في دبي متخصصة في تجارة أجهزة الكمبيوتر والتكنولوجيا، وشبكتنا اللوجستية تتعامل مع كل أنواع البضائع.","Yes. Headway, one of our Dubai companies, specialises in computer and technology trading, and our logistics network handles cargo of every kind."],
+    fq4:["منو يتولى الشحن والتخليص؟","Who handles shipping and customs?"],
+    fa4:["شركات المجموعة اللوجستية تتولى تنسيق الشحن والتخليص بنفسها، وتتابع الشحنة لحد ما توصل.","Our group's logistics companies coordinate freight and clearance in-house and follow the shipment to arrival."],
+    fq5:["شلون الدفع؟","What are the payment terms?"],
+    fa5:["طرق الدفع تتحدد حسب حجم الطلبية، وترسل لك مكتوبة مع عرض السعر.","Payment terms depend on order size and are sent in writing with the quote."],
     fq6:["شكد أقل كمية؟","Is there a minimum order?"],
-    fa6:["نشتغل بكميات الجملة، والحد الأدنى يختلف حسب الصنف. أرسل طلبك ونوضح لك.","We work in wholesale volumes; the minimum varies per item. Send your request and we'll clarify."],
+    fa6:["نشتغل بكميات الجملة، ونوفّر حاويات كاملة أو جزئية حسب حجم طلبك. أرسل طلبك ونوضح لك.","We work in wholesale volumes and offer full or part containers depending on your order. Send your request and we'll clarify."],
+    fq7:["عدكم مكتب بالعراق؟","Do you have an office in Iraq?"],
+    fa7:["المجموعة راح تفتح شركة لوجستية في العراق قريبًا، وبعد الاتفاق يقدر ممثلنا يتابع وياك مباشرة.","The group will open a logistics company in Iraq soon; after agreement our representative can follow up with you directly."],
 
-    /* band + footer */
     band_h:["جاهز تبدأ؟","Ready to start?"],
     band_p:["اترك بياناتك بزر واحد، ونتواصل وياك بعرض سعر مكتوب.","Leave your details with one button and we'll come back with a written quote."],
     f_links:["روابط","Links"],
     f_contact:["تواصل","Contact"],
-    f_about:["مجموعة HTS — تجارة وخدمات لوجستية من مصر ودبي وتركيا والصين إلى العراق.","HTS Group — trade and logistics from Egypt, Dubai, Turkey and China to Iraq."],
+    f_about:["مجموعة HTS القابضة — تجارة وخدمات لوجستية من الصين ودبي ومصر وتركيا إلى العراق.","HTS Holding Group — trade and logistics from China, Dubai, Egypt and Turkey to Iraq."],
     f_rights:["جميع الحقوق محفوظة","All rights reserved"],
 
-    /* modal */
     m_h:["اترك بياناتك","Leave your details"],
     m_p:["اسمك ورقمك بس — ونتواصل وياك خلال يوم عمل.","Just your name and number — we'll contact you within one business day."],
     m_note:["شنو تحتاج؟ (اختياري)","What do you need? (optional)"],
     m_send:["أرسل","Send"],
-    m_priv:["بياناتك تستخدم للتواصل وياك بخصوص طلبك فقط.","Your details are used only to contact you about your request."],
     m_sending:["جارٍ الإرسال…","Sending…"],
+    m_priv:["بياناتك تستخدم للتواصل وياك بخصوص طلبك فقط.","Your details are used only to contact you about your request."],
     m_ok_h:["وصلنا طلبك","We've got it"],
     m_ok_p:["شكرًا لك. فريقنا راح يتواصل وياك خلال يوم عمل.","Thank you. Our team will contact you within one business day."],
     m_ok_wa:["تحب تستعجل؟ راسلنا على واتساب","In a hurry? Message us on WhatsApp"],
     m_close:["تمام","Done"],
+    ld_txt:["جارٍ التحميل","LOADING"],
     wa_msg:["السلام عليكم، أريد عرض سعر من Hawk Trade","Hello, I'd like a quote from Hawk Trade"]
   };
 
@@ -212,6 +256,30 @@ var TEL = "+201551876540";
   var saved = "ar";
   try { saved = localStorage.getItem("hts-lang") || "ar"; } catch (e) {}
   setLang(saved === "en" ? "en" : "ar");
+
+  /* ---------- loader + page transition ---------- */
+  var loader = $("loader");
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function hideLoader(){ if (loader) loader.classList.add("gone"); }
+  if (loader){
+    if (reduce) hideLoader();
+    else if (d.readyState === "complete") setTimeout(hideLoader, 220);
+    else window.addEventListener("load", function(){ setTimeout(hideLoader, 220); });
+    setTimeout(hideLoader, 3000);
+    window.addEventListener("pageshow", function(e){ if (e.persisted) hideLoader(); });
+    if (!reduce){
+      d.addEventListener("click", function(e){
+        var a = e.target.closest("a");
+        if (!a || e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+        var href = a.getAttribute("href") || "";
+        if (!href || href.charAt(0) === "#" || a.target === "_blank") return;
+        if (/^(mailto:|tel:|https?:)/i.test(href)) return;
+        e.preventDefault();
+        loader.classList.remove("gone");
+        setTimeout(function(){ location.href = href; }, 300);
+      });
+    }
+  }
 
   /* ---------- mobile nav ---------- */
   var burger = $("burger"), nav = $("nav");
@@ -377,7 +445,7 @@ var TEL = "+201551876540";
     };
     requestAnimationFrame(step);
   }
-  var rv = d.querySelectorAll(".rv");
+  var rv = d.querySelectorAll(".rv,.rv-s");
   if ("IntersectionObserver" in window){
     var io = new IntersectionObserver(function(entries){
       entries.forEach(function(x){

@@ -16,26 +16,44 @@
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Hawk Trade — توريد بالجملة إلى العراق">
+<meta property="og:image:alt" content="Hawk Trade — استيراد بالجملة إلى العراق">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="اطلب عرض سعر — Hawk Trade">
 <meta name="twitter:description" content="اترك بياناتك ونتواصل وياك خلال يوم عمل.">
 <meta name="twitter:image" content="https://hawk-trade.github.io/hawk-trade/og.jpg">
-<meta name="theme-color" content="#0a1c33">
+<meta name="theme-color" content="#071628">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Inter:wght@400;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 
 </head>
 <body>
+
+<div class="loader" id="loader">
+  <div class="ld">
+    <img class="ld-logo" src="img/hts-logo-sm.webp" alt="" width="300" height="140">
+    <div class="ld-road">
+      <svg class="ld-truck" viewBox="0 0 120 60" aria-hidden="true">
+        <rect x="4" y="12" width="60" height="30" rx="4" fill="#e0c069"/>
+        <rect x="10" y="18" width="48" height="8" rx="2" fill="#bf9429" opacity=".55"/>
+        <path d="M66 20h20l14 14v8H66z" fill="#143454" stroke="#e0c069" stroke-width="2"/>
+        <rect x="70" y="23" width="13" height="9" rx="2" fill="#7cb6d6" opacity=".85"/>
+        <circle class="whl" cx="26" cy="46" r="9" fill="#0c1826" stroke="#e0c069" stroke-width="2.5"/>
+        <circle class="whl" cx="84" cy="46" r="9" fill="#0c1826" stroke="#e0c069" stroke-width="2.5"/>
+      </svg>
+      <div class="ld-line"></div>
+    </div>
+    <div class="ld-txt"><span data-t="ld_txt">جارٍ التحميل</span></div>
+  </div>
+</div>
 <a class="sr" href="#main">تخطَّ إلى المحتوى</a>
 <header class="hd">
 <div class="wrap">
-  <a class="brand" href="index.html" aria-label="Hawk Trade"><img src="img/hts-logo.webp" alt="Hawk Trade" width="640" height="300"></a>
+  <a class="brand" href="index.html" aria-label="Hawk Trade"><img src="img/hts-logo-sm.webp" alt="Hawk Trade" width="300" height="140"></a>
   <nav id="nav" aria-label="القائمة الرئيسية">
     <a href="index.html"><span data-t="nav_home">الرئيسية</span></a>
     <a href="products.html"><span data-t="nav_prod">المنتجات</span></a>
@@ -63,14 +81,15 @@
   <div class="split" style="align-items:start">
     <div class="rv">
       <div class="head" style="margin-bottom:22px"><span class="eye"><span data-t="cf_h">اطلب عرض سعر</span></span><h2 style="font-size:clamp(23px,3.2vw,32px)"><span data-t="q_h">سجّل طلبك خلال دقيقة</span></h2><p class="sub"><span data-t="cf_p">كل الحقول اختيارية ما عدا الاسم والرقم.</span></p></div>
-      <form class="form" id="c-form" novalidate>
+      <form class="form" id="c-form" data-msg="c-msg" novalidate>
         <div class="fg">
           <div><label for="c-n"><span data-t="f_n">الاسم</span> *</label><input id="c-n" name="name" autocomplete="name" maxlength="80" required></div>
           <div><label for="c-ph"><span data-t="f_ph">رقم الهاتف / واتساب</span> *</label><input id="c-ph" name="phone" type="tel" inputmode="tel" dir="ltr" autocomplete="tel" placeholder="+964 7xx xxx xxxx" maxlength="25" required></div>
           <div><label for="c-em"><span data-t="f_em">البريد الإلكتروني</span></label><input id="c-em" name="email" type="email" inputmode="email" dir="ltr" autocomplete="email" maxlength="120"></div>
           <div><label for="c-c"><span data-t="f_c">اسم الشركة / المكتب</span></label><input id="c-c" name="company" autocomplete="organization" maxlength="100"></div>
           <div><label for="c-ci"><span data-t="f_ci">المدينة</span></label><input id="c-ci" name="city" maxlength="60"></div>
-          <div class="full"><label for="c-ty"><span data-t="f_t">نوع النشاط</span></label><select id="c-ty" name="type"><option data-t="o1">مستورد</option><option data-t="o2">تاجر جملة</option><option data-t="o3">موزع</option><option data-t="o4">سوبرماركت / سلسلة</option><option data-t="o5">أخرى</option></select></div>
+          <div><label for="c-ty"><span data-t="f_t">نوع النشاط</span></label><select id="c-ty" name="type"><option data-t="o1">مستورد</option><option data-t="o2">تاجر جملة</option><option data-t="o3">موزع</option><option data-t="o4">سوبرماركت / سلسلة</option><option data-t="o5">مقاولات</option><option data-t="o6">أخرى</option></select></div>
+          <div class="full"><label for="c-sec"><span data-t="f_s">القطاع المطلوب</span></label><select id="c-sec" name="sector"><option data-t="k1">إلكترونيات وتكنولوجيا</option><option data-t="k2">حديد ومواد بناء</option><option data-t="k3">منتجات غذائية</option><option data-t="k4">أكثر من قطاع / غير ذلك</option></select></div>
           <div class="full"><label for="c-p"><span data-t="f_p">الأصناف المطلوبة</span></label><textarea id="c-p" name="items" maxlength="600"></textarea></div>
           <div class="full"><label for="c-q"><span data-t="f_q">الكمية التقريبية</span></label><input id="c-q" name="quantity" maxlength="100"></div>
         </div>
@@ -93,7 +112,7 @@
         <div class="card"><h3 style="font-size:16px"><span data-t="ci_resp">وقت الرد</span></h3><p><span data-t="ci_resp_v">خلال يوم عمل واحد</span></p></div>
         <div class="card"><h3 style="font-size:16px"><span data-t="ci_hours">ساعات العمل</span></h3><p><span data-t="ci_hours_v">السبت – الخميس، 9 صباحًا – 6 مساءً (توقيت مصر)</span></p></div>
       </div>
-      <div class="fig" style="margin-top:16px;border-radius:var(--r-lg);overflow:hidden"><img src="img/hts-qc.webp" alt="" width="800" height="537" loading="lazy" decoding="async"></div>
+      <div class="fig" style="margin-top:16px;border-radius:var(--r-xl);overflow:hidden"><img src="img/ops-pallets.webp" alt="" width="1024" height="1024" loading="lazy" decoding="async"></div>
     </div>
   </div>
 </div>
@@ -102,18 +121,19 @@
 <section class="soft">
 <div class="wrap faq">
   <div class="head rv"><span class="eye"><span data-t="faq_k">أسئلة متكررة</span></span><h2><span data-t="faq_h">قبل ما تتواصل</span></h2></div>
-  <details class="rv"><summary><span data-t="fq1">شكد الأسعار؟</span></summary><p><span data-t="fa1">السعر يعتمد على الصنف والكمية والتعبئة. أرسل لنا طلبك ونرجع لك بعرض سعر مكتوب.</span></p></details>
-  <details class="rv"><summary><span data-t="fq2">منين البضاعة؟</span></summary><p><span data-t="fa2">تركيزنا الأساسي على السوق المصري، ونوفّر كذلك من دبي وتركيا والصين عبر شركات المجموعة. بلد المنشأ يكون واضح في عرض السعر لكل صنف.</span></p></details>
-  <details class="rv"><summary><span data-t="fq3">منو يتولى الشحن والتخليص؟</span></summary><p><span data-t="fa3">مجموعتنا تتولى الشحن والتخليص الجمركي بنفسها، وتتابع الشحنة لحد ما توصل.</span></p></details>
-  <details class="rv"><summary><span data-t="fq4">شلون الدفع؟</span></summary><p><span data-t="fa4">طرق الدفع تتحدد حسب حجم الطلبية، وترسل لك مكتوبة مع عرض السعر.</span></p></details>
-  <details class="rv"><summary><span data-t="fq5">عدكم مكتب بالعراق؟</span></summary><p><span data-t="fa5">فرعنا في العراق قريبًا، وبعد الاتفاق يقدر ممثلنا يتابع وياك مباشرة.</span></p></details>
-  <details class="rv"><summary><span data-t="fq6">شكد أقل كمية؟</span></summary><p><span data-t="fa6">نشتغل بكميات الجملة، والحد الأدنى يختلف حسب الصنف. أرسل طلبك ونوضح لك.</span></p></details>
+  <details class="rv"><summary><span data-t="fq1">شكد الأسعار؟</span></summary><p><span data-t="fa1">السعر يعتمد على الصنف والكمية والتعبئة وسوق المصدر. أرسل لنا طلبك ونرجع لك بعرض سعر مكتوب.</span></p></details>
+  <details class="rv"><summary><span data-t="fq2">منين البضاعة؟</span></summary><p><span data-t="fa2">من أسواق المجموعة: الصين ودبي ومصر وتركيا — ونقدر نوفّر من أسواق ثانية حسب الصنف. بلد المنشأ واضح في عرض السعر لكل صنف.</span></p></details>
+  <details class="rv"><summary><span data-t="fq3">تستوردون إلكترونيات وحديد ومواد بناء فعلاً؟</span></summary><p><span data-t="fa3">إي. من ضمن شركات المجموعة شركة Headway في دبي متخصصة في تجارة أجهزة الكمبيوتر والتكنولوجيا، وشبكتنا اللوجستية تتعامل مع كل أنواع البضائع.</span></p></details>
+  <details class="rv"><summary><span data-t="fq4">منو يتولى الشحن والتخليص؟</span></summary><p><span data-t="fa4">شركات المجموعة اللوجستية تتولى تنسيق الشحن والتخليص بنفسها، وتتابع الشحنة لحد ما توصل.</span></p></details>
+  <details class="rv"><summary><span data-t="fq5">شلون الدفع؟</span></summary><p><span data-t="fa5">طرق الدفع تتحدد حسب حجم الطلبية، وترسل لك مكتوبة مع عرض السعر.</span></p></details>
+  <details class="rv"><summary><span data-t="fq6">شكد أقل كمية؟</span></summary><p><span data-t="fa6">نشتغل بكميات الجملة، ونوفّر حاويات كاملة أو جزئية حسب حجم طلبك. أرسل طلبك ونوضح لك.</span></p></details>
+  <details class="rv"><summary><span data-t="fq7">عدكم مكتب بالعراق؟</span></summary><p><span data-t="fa7">المجموعة راح تفتح شركة لوجستية في العراق قريبًا، وبعد الاتفاق يقدر ممثلنا يتابع وياك مباشرة.</span></p></details>
 </div>
 </section>
 
 
 <section class="band">
-<img src="img/hts-ship-1600.webp" alt="" width="1600" height="528" loading="lazy" decoding="async">
+<img src="img/bg-road.webp" alt="" width="1376" height="768" loading="lazy" decoding="async">
 <div class="wrap rv">
   <span class="eye" style="color:var(--gold-2)">Hawk Trade</span>
   <h2><span data-t="band_h">جاهز تبدأ؟</span></h2>
@@ -130,8 +150,8 @@
 <div class="wrap">
   <div class="fgrid">
     <div>
-      <img class="flogo" src="img/hts-logo.webp" alt="Hawk Trade" width="640" height="300" loading="lazy" decoding="async">
-      <p style="max-width:330px"><span data-t="f_about">مجموعة HTS — تجارة وخدمات لوجستية من مصر ودبي وتركيا والصين إلى العراق.</span></p>
+      <img class="flogo" src="img/hts-logo-sm.webp" alt="Hawk Trade" width="300" height="140" loading="lazy" decoding="async">
+      <p style="max-width:340px"><span data-t="f_about">مجموعة HTS القابضة — تجارة وخدمات لوجستية من الصين ودبي ومصر وتركيا إلى العراق.</span></p>
     </div>
     <div>
       <h4><span data-t="f_links">روابط</span></h4>
@@ -153,7 +173,7 @@
     </div>
   </div>
   <div class="fbot">
-    <span>Hawk Trade &amp; Services — HTS Group</span>
+    <span>Hawk Trade &amp; Services — HTS Holding Group</span>
     <span dir="ltr">© <span id="yr">2026</span> · <span data-t="f_rights">جميع الحقوق محفوظة</span></span>
   </div>
 </div>
@@ -176,7 +196,7 @@
         <h3 id="m-title"><span data-t="m_h">اترك بياناتك</span></h3>
         <p><span data-t="m_p">اسمك ورقمك بس — ونتواصل وياك خلال يوم عمل.</span></p>
       </div>
-      <form id="m-form" novalidate>
+      <form id="m-form" data-msg="m-msg" novalidate>
         <div class="fg">
           <div class="full"><label for="m-n"><span data-t="f_n">الاسم</span> *</label><input id="m-n" name="name" autocomplete="name" maxlength="80" required></div>
           <div class="full"><label for="m-ph"><span data-t="f_ph">رقم الهاتف / واتساب</span> *</label><input id="m-ph" name="phone" type="tel" inputmode="tel" dir="ltr" autocomplete="tel" placeholder="+964 7xx xxx xxxx" maxlength="25" required></div>
