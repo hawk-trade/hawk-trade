@@ -23,7 +23,7 @@ var TEL = "+201551876540";
     nav_cta:["اترك بياناتك","Leave your details"],
 
     chip:["الصين · دبي · مصر · تركيا — العراق قريبًا","China · Dubai · Egypt · Turkey — Iraq soon"],
-    h1a:["نستورد لك","We import for you"],
+    h1a:["نستورد لك كل اللي تحتاجه","We import everything you need"],
     r1:["إلكترونيات ولابتوبات","electronics & laptops"],
     r2:["حديد ومواد بناء","steel & building materials"],
     r3:["منتجات غذائية","food products"],
@@ -62,8 +62,12 @@ var TEL = "+201551876540";
     s3b2:["أرز وبقوليات وزيوت","Rice, pulses & oils"],
     s3c:["مكرونة ومواد جافة","Pasta & dry goods"],
     s3d:["مربى وحلاوة وطحينة","Jams, halawa & tahini"],
+    s1tag:["لابتوبات، موبايلات، أجهزة منزلية وقطع غيار","Laptops, phones, appliances & parts"],
+    s2tag:["حديد تسليح، ألمنيوم، سيراميك وأدوات صحية","Rebar, aluminium, ceramic & sanitary ware"],
+    s3tag:["معلبات، أرز وزيوت، مكرونة ومربيات","Canned goods, rice & oils, pasta & jams"],
     s4h:["أي صنف ثاني؟","Anything else?"],
     s4p:["أرسل لنا قائمتك بالأصناف والكميات، ونرجع لك بالتوفر والسعر وبلد المنشأ — مهما كان الصنف أو السوق.","Send us your list of items and quantities and we'll come back with availability, price and origin — whatever the item or the market."],
+    s4tag:["أرسل قائمتك ونرجع لك بالسعر وبلد المنشأ","Send your list and we'll reply with price and origin"],
     s4go:["أرسل قائمتك","Send your list"],
 
     j_k:["من المصدر لحد مخزنك","From source to your door"],
